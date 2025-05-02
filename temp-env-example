@@ -1,0 +1,40 @@
+# App Configuration
+VITE_APP_NAME="Portfolio Website"
+PORT=5000  # Single port for both frontend and backend
+VITE_API_URL="http://localhost:5000"  # API requests use the same port
+
+# Database Configuration (if using)
+DATABASE_URL="postgresql://user:password@localhost:5432/portfolio_db"
+
+# Email Service (for contact form)
+SMTP_HOST="smtp.example.com"
+SMTP_PORT=587
+SMTP_USER="your-email@example.com"
+SMTP_PASSWORD="your-password"
+
+# External Services
+# GitHub (for displaying repositories)
+VITE_GITHUB_TOKEN=""
+VITE_GITHUB_USERNAME=""
+
+# Google Analytics (optional)
+VITE_GA_TRACKING_ID=""
+
+# Social Media Links (used in frontend)
+VITE_LINKEDIN_URL=""
+VITE_TWITTER_URL=""
+VITE_GITHUB_URL=""
+
+# Security
+JWT_SECRET="your-jwt-secret"
+COOKIE_SECRET="your-cookie-secret"
+
+# Rate Limiting
+RATE_LIMIT_WINDOW=900000  # 15 minutes in milliseconds
+RATE_LIMIT_MAX_REQUESTS=100
+
+# Environment
+NODE_ENV="development"  # or "production" - affects Vite integration
+
+# Note: Replace all placeholder values with your actual configuration
+# DO NOT commit actual values to version control - this is just a template 
